@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HARUMI's Portfolio Site. WORKS-WORK</title>
+  <meta name="description" content="温水晴海(HARUMI NUKUMIZU)のポートフォリオサイトです。自己紹介や制作したものを掲載しています。Webデザインやコーディングから、バナーやロゴの制作もしています。
+  " />
+
+  <!-- フォントの種類設定 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+
+  <!-- ファビコンのリンク -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../../img/common/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../../img/common/favicon-32x32.png" />
+  <link rel="icon" type="../../image/png" sizes="16x16" href="../../img/common/favicon-16x16.png" />
+  <link rel="manifest" href="../../img/common/site.webmanifest" />
+  <link rel="mask-icon" href="../../img/common/safari-pinned-tab.svg" color="#da969b" />
+  <meta name="msapplication-TileColor" content="#da969b" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <!-- cssのリンクファイル -->
+  <link rel="stylesheet" href="../../css/normalize.css" />
+
+  <link rel="stylesheet" href="../../css/style.min.css" />
+
+</head>
+
+<body class="work-page">
+  <div id="loading">
+    <div id="loading_logo">
+      <img src="../../img/common/moon-cloud-line.png" alt="お月さま">
+      <p class="title-big-b">please waiting</p>
+      <p class="jp-sm-b"">お待ちください</p>
+    </div>
+  </div>
+
+
+  <header>
+    <div class=" menu-container">
+      <h1 class="title-big-b" id="h1"><a href="../../index.html">harumi</a></h1>
+      <div class="line-before-wrapper">
+        <span class="line-before"></span>
+        <span class="line-before"></span>
+        <span class="line-before"></span>
+      </div>
+      <div class="menu-circle" id="menu-circle">
+        <div class="line-wrapper" id="line-wrapper">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav" id="nav">
+      <ul class="nav-list">
+        <li class="nav-list-item"><a href="/works/works.html"><span class="title-big-b">works</span><br><span
+              class="jp-sm-b">-制作したもの-</a></span></li>
+        <li class="nav-list-item"><a href="/about.html">
+            <span class="title-big-b">about</span><br><span class="jp-sm-b">-私について-</span>
+          </a></li>
+        <li class="nav-list-item"><a href="#contact">
+            <spna class="title-big-b">contact</spna><br><span class="jp-sm-b">-お声かけ-</span>
+          </a></li>
+      </ul>
+    </div>
+
+    </header>
+
+    <main id="top">
+      <canvas id="waveCanvas"></canvas>
+      <div class="main-inner">
+        <section class="sect sect-works">
+          <div class="h2"><span class="title-big-b">works</span><br><span class="jp-sm-b">-制作したもの-</span></div>
+          <div class="works">
+            <div class="work">
+              <a href="https://nukumizuharumi.github.io/nappa69/" target="_blank">
+                <div class="img-cover"><img src="../../img/works/website/nappa69-first-view.png" alt=""></div>
+                <h3>HanaCAFE nappa69</h3>
+                <p>Webdesign　Coding　Logo</p>
+              </a>
+            </div>
+          </div>
+          <div class="work-explanation">
+            <div class="work-explanation-area">
+              <p class="work-explanation-title title-sm-b">制作の経緯</p>
+              <p class="work-explanation-content">
+                実在したカフェのサイトをリニューアルすることを想定して作成しました。<br>下記の情報と過去サイトの情報を元にターゲットとなるペルソナの作成を行い、サイトのデザインとコーディングを行いました。</p>
+            </div>
+            <div class="work-explanation-area">
+              <p class="work-explanation-title title-sm-b">問題点・要望</p>
+              <p class="work-explanation-content">
+                お店の特徴や雰囲気が伝わるデザインになっていない。
+                ナビゲーションが上手く機能していない。
+                デリバリーや予約も行っているが、上手くアピールできていない。
+                住宅地の奥まったロケーションにあるためアクセスをわかりやすくしたい。
+                近隣地域の20〜40代の女性。
+                利用者の大半は女性。
+                カウンター席〜テーブル・ソファ席は4人の利用が可能。
+                住宅地にあり日中は主婦層、夕方〜夜は仕事帰りのOLやカップル。
+                女子会の利用もあり。
+              </p>
+            </div>
+            <div class="work-explanation-area">
+              <p class="work-explanation-title title-sm-b">制作時に意識したところ</p>
+              <p class="work-explanation-content">
+                ペルソナをもとに、爽やかさとゆっくりした時間を感じられるようにを心がけました。色味は白をベースに、お店のコンセプトにある花や植物をイメージした柔らかい色の葉の緑、木の茶色、花の赤を選びました。ゆっくりとした様子を感じられるように、レイアウトには余白をと入れることやアニメーションで動きをつけることで単調とならないように努めました。葉っぱが降るアニメーションを入れることでユーザーに興味を持ってみてもらうことを工夫しました。<br>
+                情報を整理しナビゲーションによる情報へのアクセスを行いました。<br>デリバリーや予約については、アピール部分だけでなく、ナビゲーションに含めることですぐに対応できるようにしています。
+                アクセスは実際にくることを想定して、Googleマップを埋め込みお店までの経路を明確にしました。<br>
+                また、昨今では飲食店についてはアプリやSNSでの情報が集客につながっています。こちらのお店では、今までSNSの更新やブログの更新でメニューやイベントのお知らせをしていました。そのため、Webサイトは固定情報の掲載として使用することを想定しSNSへ誘導できるように複数の場所にSNSのリンクを配置しました。それによってSNSの定期運用を行い、サイト管理の負担を減らすことも考えています。
+              </p>
+            </div>
+          </div>
+
+          <section class="sect sect-work">
+
+      </div>
+
+
+
+  </div>
+  </main>
+
+
+
+  <footer id="contact">
+    <div class="footer-inner">
+      <div class="h2"><span class="title-big-b">contact</span><br><span class="jp-sm-b">-お声かけ-</span></div>
+      <form action="program.php" method="post" novalidate>
+        <dl>
+          <div class="form-item">
+            <dt class="sun-sm">name -お名前-</dt>
+            <dd><input type="text" name="userName" required></i></dd>
+          </div>
+          <div class="form-item">
+            <dt class="sun-sm">mail address -メールアドレス-</dt>
+            <dd><input type="email" name="userEmail"></dd>
+          </div>
+          <div class="form-item">
+            <dt class="sun-sm">message -メッセージ-</dt>
+            <dd><textarea name="message" rows="10"></textarea>
+            </dd>
+          </div>
+        </dl>
+        <div class="form-submit button-cover">
+          <button type="submit" value="送信する"><a href="#"><span class="title-big-b">send</span><br><span class="jp-sm-b">
+                -送信する-</span></a></button>
+        </div>
+
+
+      </form>
+    </div>
+
+    <div class="footer-bottom" id="wrapper">
+      <div class="wave">
+        <canvas id="waveCanvas2"></canvas>
+        <div class="go-up">
+          <a href="#top">
+            <div class="thankyou"><img src="../../img/top-arrow.png" alt="見てくれてありがとう、上に戻る矢印"></div>
+          </a>
+        </div>
+        <img class="suzuran-sm" src="../../img/suzurann-sm.png" alt="小さな鈴蘭の花">
+        <small class="copy">&copy;2024 HARUMI All rights reserved. </small>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <script src="../../js/script.js"></script>
+</body>
+
+</html>

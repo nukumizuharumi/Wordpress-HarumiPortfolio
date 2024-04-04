@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HARUMI's Portfolio Site. ABOUT</title>
+    <meta name="description" content="温水晴海(HARUMI NUKUMIZU)のポートフォリオサイトです。自己紹介や制作したものを掲載しています。Webデザインやコーディングから、バナーやロゴの制作もしています。
+  " />
+
+    <!-- フォントの種類設定 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+
+    <!-- ファビコンのリンク -->
+    <link rel="apple-touch-icon" sizes="180x180" href="<?= get_template_directory_uri(); ?>/img/common/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= get_template_directory_uri(); ?>/img/common/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= get_template_directory_uri(); ?>/img/common/favicon-16x16.png" />
+    <link rel="manifest" href="<?= get_template_directory_uri(); ?>/img/common/site.webmanifest" />
+    <link rel="mask-icon" href="<?= get_template_directory_uri(); ?>/img/common/safari-pinned-tab.svg" color="#da969b" />
+    <meta name="msapplication-TileColor" content="#da969b" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- cssのリンクファイル -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <link rel="stylesheet" href="css/style.min.css" />
+
+</head>
+
+<body class="profile-page">
+    <div id="loading">
+        <div id="loading_logo">
+            <img src="<?= get_template_directory_uri(); ?>/img/common/moon-cloud-line.png" alt="お月さま">
+            <p class="title-big-b">please waiting</p>
+            <p class="jp-sm-b"">お待ちください</p>
+        </div>
+    </div>
+
+
+    <header>
+        <div class=" menu-container">
+            <h1 class="title-big-b" id="h1"><a href="index.html">harumi</a></h1>
+            <div class="line-before-wrapper">
+                <span class="line-before"></span>
+                <span class="line-before"></span>
+                <span class="line-before"></span>
+            </div>
+            <div class="menu-circle" id="menu-circle">
+                <div class="line-wrapper" id="line-wrapper">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav" id="nav">
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="works/works.html"><span class="title-big-b">works</span><br><span
+                            class="jp-sm-b">-制作したもの-</a></span></li>
+                <li class="nav-list-item"><a href="about.html">
+                        <span class="title-big-b">about</span><br><span class="jp-sm-b">-私について-</span>
+                    </a></li>
+                <li class="nav-list-item"><a href="#contact">
+                        <span class="title-big-b">contact</span><br><span class="jp-sm-b">-お声かけ-</span>
+                    </a></li>
+            </ul>
+        </div>
+
+        </header>
+
+
+        <main id="top">
+            <canvas id="waveCanvas"></canvas>
+            <div class="main-inner">
+                <section class="sect pofile" id="pofile">
+                    <div class="h2"><span class="title-big-b">about me</span><br><span class="jp-sm-b">-私について-</span>
+                    </div>
+                    <div class="about">
+                        <img src="<?= get_template_directory_uri(); ?>/img/common/android-chrome-192x192.png" alt="制作者イメージ">
+                        <div class="about-text">
+                            <p class="about-text-name"><span class="title-big-n">harumi nukumizu</span><br><span
+                                    class="jp-mid">温水 晴海</span></p>
+                            <p>海外生まれ、日本育ち。<br>
+                                大学卒業後は看護師・助産師として総合病院に勤務する。<br>
+                                人生について考え興味のあったWebデザインやコーディングについて学ぶ。<br>
+                                性格は明るく元気、責任感があると周囲からは言ってもらえます。</p>
+                            <p>「笑う門には福来る」「日進月歩」をモットーに対話を大切にしています。<br>
+                                人の大切な想いをカタチにすることを心がけ、課題解決につなぐことで喜んでもらえる制作をしたいと考えています。</p>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+                <section class="sect biography">
+                    <div class="h2-sub">
+                        <span class="title-big-n">biography</span><br><span class="jp-sm-b">-これまで-</span>
+                    </div>
+                    <div class="swiper sect-content biography-cover">
+                        <div class="swiper-wrapper">
+
+                            <div class="biography-content swiper-slide">
+                                <p class="title-sm-b biography-content-title">学生時代</p>
+                                <p class="sun-sm biography-content-line"></p>
+                                <p class="biography-content-text">クラス委員長などを務め、クラスをまとめる機会が多くありました。<br>
+                                    個性の光るクラスメイトをまとめるにあたり、人との関わりなどを学び自分の成長になりました。<br>
+                                    卒業時には、功労賞をいただきました。</p>
+                            </div>
+                            <div class="biography-content swiper-slide">
+                                <p class="title-sm-b biography-content-title">看護師・助産師</p>
+                                <p class="sun-sm biography-content-line"></p>
+                                <p class="biography-content-text">卒業後、看護師・助産師として就職し総合病院で働いていました<br>
+                                    産婦人科や小児科で勤務し、たくさんの人に出会い、それぞれの患者さんや家族のサポートをしてきました。</p>
+                            </div>
+                            <div class="biography-content swiper-slide">
+                                <p class="title-sm-b biography-content-title">Webデザイナー</p>
+                                <p class="sun-sm biography-content-line"></p>
+                                <p class="biography-content-text">
+                                    たくさんの命に関わったことで、自身の今後について考えました。<br>自分が興味のあったWeb関係について「やりたい！」と思い、デザインとコーディングについてスクールで学びはじめました。
+                                </p>
+                            </div>
+                            <div class="biography-content swiper-slide">
+                                <p class="title-sm-b biography-content-title">現在と未来</p>
+                                <p class="sun-sm biography-content-line"></p>
+                                <p class="biography-content-text">Webのデザインとコーディングの学習を今も継続してしています。<br>
+                                    大切な想いをカタチにし、課題解決に向けられるように制作をしたいと考えています<br>
+                                    数年後には要望だけではなく、より良い提案を自ら行えるようにしていきたいです。</p>
+                            </div>
+                        </div>
+                    <div class="swiper-pagination"></div>
+                    </div>
+    </section>
+
+    <section class="sect strength">
+        <div class="h2-sub">
+            <span class="title-big-n">strength</span><br><span class="jp-sm-b">-強み-</span>
+        </div>
+        <div class="sect-content strength-cover">
+            <div class="circle">
+                <div class="circle-content">
+                    <span class="title-sm-b">communication</span><span class="jp-sm-b">-対話と傾聴-</span>
+                </div>
+                <div class="circle-content">
+                    <span class="title-sm-b">positivity</span><span class="jp-sm-b">-積極性-</span>
+                </div>
+                <div class="circle-content">
+                    <span class="title-sm-b">cooperation</span><span class="jp-sm-b">-協力-</span>
+                </div>
+            </div>
+            <div class="circle-text">
+                <div class="circle-text-area">
+                    <p class="circle-text-area-title"><span class="title-sm-b">communication</span><br><span
+                            class="jp-sm-b">-対話と傾聴-</span>
+                    </p>
+                    <P class="circle-text-area-text">学生時代や前職で多くの人と話す機会があり、相手への伝え方や話を聞く力をやしなってきました。<br>
+                        伝え方や聞く力から、ご依頼主の考えや想いを把握してデザインへの反映につなげられると考えています。
+                    </P>
+                </div>
+
+                <div class="circle-text-area">
+                    <p class="circle-text-area-title">
+                        <span class="title-sm-b">positivity</span><br><span class="jp-sm-b">-積極性-</span>
+                    </p>
+                    <p class="circle-text-area-text">
+                        日々、自分の知らないことを学習して知識を広げています。前職では自分から先輩や上司に声をかけ、解決策の提案を行うことなどもしてきました。<br>
+                        今年は、資格の取得も目指していきたいと考えています。
+                    </p>
+                </div>
+
+                <div class="circle-text-area">
+                    <p class="circle-text-area-title">
+                        <span class="title-sm-b">cooperation</span><br><span class="jp-sm-b">-協力-</span>
+                    </p>
+                    <p class="circle-text-area-text">
+                        患者さんの問題について、さまざまな職種の力を合わせて、チームで協力して支援や解決に向けて取り組んでいました。<br>お互いの役割を理解して、チームで協力しあいながら物事に取り組めます。
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="sect skill">
+        <div class="h2-sub">
+            <span class="title-big-n">skill</span><br><span class="jp-sm-b">-できること-</span>
+        </div>
+        <div class="sect-content skill-cover">
+            <div class="skill-content">
+                <img class="skill-img" src="<?= get_template_directory_uri(); ?>/img/about/skill-design.png" alt="デザインのイラスト">
+                <p class="skill-content-title">
+                    <span class="title-sm-b">design</span><br><span class="title-sm-b">-デザイン-</span>
+                </p>
+                <p class="skill-content-icon"><img src="<?= get_template_directory_uri(); ?>/img/about/skill-icons_figma-dark.png" alt="Figmaアイコン"><img
+                        src="<?= get_template_directory_uri(); ?>/img/about/skill-icons_illustrator.png" alt=illustratorアイコン"><img
+                        src="<?= get_template_directory_uri(); ?>/img/about/skill-icons_photoshop.png" alt="Photoshopアイコン">
+                </p>
+
+                <p class="skill-content-text">
+                    デザインの学習を行い、レイアウトや色味の学習を日々、継続しています。<br>
+                    FigmaでWebサイトデザイン、AdobeのillustratorやPhotoshopでバナーやアイコンの制作を行います。
+                </p>
+            </div>
+            <div class="skill-content">
+                <img class="skill-img" src="<?= get_template_directory_uri(); ?>/img/about/skill-code.png" alt="">
+                <p class="skill-content-title">
+                    <span class="title-sm-b">coding</span><br><span class="title-sm-b">-コーディング-</span>
+                </p>
+                <p class="skill-content-icon"><img src="<?= get_template_directory_uri(); ?>/img/about/skill-icons_html.png" alt="HTML5アイコン"><img
+                        src="<?= get_template_directory_uri(); ?>/img/about/skill-icons_css.png" alt="CSS5アイコン"><img src="<?= get_template_directory_uri(); ?>/img/about/skill-icons_javascript.png"
+                        alt="JavaScriptアイコン"></p>
+                <p class="skill-content-text">
+                    HTML/CSSでの基本的なサイト制作ではレスポンシブデザインを意識して制作をしています。<br>
+                    JavaScriptを取り入れた基本的な動作も実装しています。<br>
+                    プラグインの導入なども行っています。
+                </p>
+                <p class="skill-content-icon"><img src="<?= get_template_directory_uri(); ?>/img/about/skill-icons_wordpress.png" alt="Wordpressアイコン">
+                </p>
+                <p class="skill-content-text">
+                    Wordpressではテーマの導入、カスタマイズを学習し、オリジナルテーマの作成を行います。
+                </p>
+            </div>
+            <div class="skill-content">
+                <img class="skill-img" src="<?= get_template_directory_uri(); ?>/img/about/skill-direction.png" alt="">
+                <p class="skill-content-title">
+                    <span class="title-sm-b">direction</span><br><span class="title-sm-b">-ディレクション-</span>
+                </p>
+                <p class="skill-content-text">
+                    プロジェクト毎の制作や保守、進行管理などに関わる全体のことを見据えられるように、少しずつ知識を増やしています。
+                </p>
+            </div>
+
+        </div>
+    </section>
+    </div>
+    </main>
+
+
+
+    <footer id="contact">
+        <div class="footer-inner">
+            <div class="h2"><span class="title-big-b">contact</span><br><span class="jp-sm-b">-お声かけ-</span></div>
+            <form action="program.php" method="post" novalidate>
+                <dl>
+                    <div class="form-item">
+                        <dt class="sun-sm">name -お名前-</dt>
+                        <dd><input type="text" name="userName" required></i></dd>
+                    </div>
+                    <div class="form-item">
+                        <dt class="sun-sm">mail address -メールアドレス-</dt>
+                        <dd><input type="email" name="userEmail"></dd>
+                    </div>
+                    <div class="form-item">
+                        <dt class="sun-sm">message -メッセージ-</dt>
+                        <dd><textarea name="message" rows="10"></textarea>
+                        </dd>
+                    </div>
+                </dl>
+                <div class="form-submit button-cover">
+                    <button type="submit" value="送信する"><a href="#"><span class="title-big-b">send</span><br><span
+                                class="jp-sm-b"> -送信する-</span></a></button>
+                </div>
+
+
+            </form>
+        </div>
+
+        <div class="footer-bottom" id="wrapper">
+            <div class="wave">
+                <canvas id="waveCanvas2"></canvas>
+                <div class="go-up">
+                    <a href="#top">
+                        <div class="thankyou"><img src="<?= get_template_directory_uri(); ?>/img/top-arrow.png" alt="見てくれてありがとう、上に戻る矢印"></div>
+                    </a>
+                </div>
+                <img class="suzuran-sm" src="<?= get_template_directory_uri(); ?>/img/suzurann-sm.png" alt="小さな鈴蘭の花">
+                <small class="copy">&copy;2024 HARUMI All rights reserved. </small>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
