@@ -21,41 +21,44 @@
 
 
   <div class="main-inner">
-    <section class="sect sect-works">
-      <div class="h2"><span class="title-big-b">works</span><br><span class="jp-sm-b">-制作したもの-</span></div>
-      <div class="works">
-        <div class="work">
-          <a href="">
-            <div class="img-cover"><img src="<?= get_template_directory_uri(); ?>/img/box-work-1 .png" alt=""></div>
-            <h3>-まだ未定-</h3>
-            <p>Webdesign　Coding　Logo</p>
-          </a>
-        </div>
-        <div class="work">
-          <a href="">
-            <div class="img-cover"><img src="<?= get_template_directory_uri(); ?>/img/works/website/nappa69-first-view.png" alt=""></div>
-            <h3>HanaCAFE nappa69</h3>
-            <p>Webdesign　Coding　Logo</p>
-          </a>
-        </div>
-        <div class="work">
-          <a href="">
-            <div class="img-cover"><img src="<?= get_template_directory_uri(); ?>/img/works/website/portfolio-first-view.png" alt=""></div>
-            <h3>HARUMI's Portfolio Site.</h3>
-            <p>Webdesign　Coding　Logo</p>
-          </a>
-        </div>
-        <div class="work">
-          <a href="">
-            <div class="img-cover"><img src="<?= get_template_directory_uri(); ?>/img/box-work-4.png" alt=""></div>
-            <h3>-タイトル-</h3>
-            <p>Webdesign　Coding　Logo</p>
-          </a>
-        </div>
-      </div>
 
-      <button><a href="works/works.html"><span class="title-big-b">more</span><br><span class="jp-sm-b">-くわしく-</a></span></button>
-    </section>
+    <?php if (have_posts()) : ?>
+
+      <section class="sect sect-works">
+        <div class="h2"><span class="title-big-b">works</span><br><span class="jp-sm-b">-制作したもの-</span></div>
+        <div class="works">
+
+          <?php while (have_posts()) : the_post() ?>
+            <div id="post-<?php the_ID(); ?>" <?php post_class('work'); ?>>
+
+              <a href="<?php the_permalink(); ?>">
+                <div class="img-cover">
+                  <?php if (has_post_thumbnail()) : ?>
+                    <?php the_post_thumbnail('medium'); ?>
+                  <?php else : ?>
+                    <img src="<?= get_template_directory_uri(); ?>/img/box-work-1 .png" alt="">
+                  <?php endif; ?>
+                </div>
+
+                <h3><?php the_title(); ?></h3>
+                <?php
+                $categories = get_the_category();
+                if ($categories) :
+                ?>
+                  <?php foreach ($categories as $category) : ?>
+                    <p><?= $category->name; ?></p>
+                  <?php endforeach; ?>
+                <?php endif; ?>
+              </a>
+            </div>
+
+          <?php endwhile; ?>
+        </div>
+
+        <button><a href="works/works.html"><span class="title-big-b">more</span><br><span class="jp-sm-b">-くわしく-</a></span></button>
+      </section>
+
+    <?php endif; ?>
 
     <section class="sect sect-about">
       <div class="h2"><span class="title-big-b">about</span><br><span class="jp-sm-b">-私について-</span></div>
