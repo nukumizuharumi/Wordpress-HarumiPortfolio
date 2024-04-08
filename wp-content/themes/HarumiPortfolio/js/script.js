@@ -186,18 +186,16 @@ init();
 //最後に関数を呼び出してアニメーションを開始する。
 //wave ↑参考コード
 
-
 // 横スクロールでBiography
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper(".swiper", {
   // direction: 'horizontal',
   slidesPerView: 1,
   loop: false,
   mousewheel: true,
   pagination: {
-    el: ".swiper-pagination"
-  }
+    el: ".swiper-pagination",
+  },
 });
-
 
 //
 //

@@ -17,15 +17,6 @@
 
 
 
-  <!-- ファビコンのリンク -->
-  <link rel="apple-touch-icon" sizes="180x180" href="<?= get_template_directory_uri(); ?>/img/common/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="<?= get_template_directory_uri(); ?>/img/common/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="<?= get_template_directory_uri(); ?>/img/common/favicon-16x16.png" />
-  <link rel="manifest" href="<?= get_template_directory_uri(); ?>/img/common/site.webmanifest" />
-  <link rel="mask-icon" href="<?= get_template_directory_uri(); ?>/img/common/safari-pinned-tab.svg" color="#da969b" />
-  <meta name="msapplication-TileColor" content="#da969b" />
-  <meta name="theme-color" content="#ffffff" />
-
   <!-- cssのリンクファイル -->
   <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/normalize.css" type="text/css" />
   <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/style.min.css" type="text/css" />
@@ -39,7 +30,7 @@
 </head>
 
 
-<body <?php body_class('top-page'); ?>>
+<body>
   <?php wp_body_open(); ?>
 
   <div id="loading">
@@ -70,8 +61,8 @@
 
     <div class="nav" id="nav">
       <ul class="nav-list">
-        <li class="nav-list-item"><a href="/works/works.html"><span class="title-big-b">works</span><br><span class="jp-sm-b">-制作したもの-</a></span></li>
-        <li class="nav-list-item"><a href="/profile.html">
+        <li class="nav-list-item"><a href="<?= get_permalink(58); ?>"><span class="title-big-b">works</span><br><span class="jp-sm-b">-制作したもの-</a></span></li>
+        <li class="nav-list-item"><a href="<?= get_permalink(34); ?>">
             <spna class="title-big-b">about</spna><br><span class="jp-sm-b">-私について-</span>
           </a></li>
         <li class="nav-list-item"><a href="#contact">

@@ -1,5 +1,6 @@
-<footer id="contact">
-  <div class="footer-inner">
+<footer>
+
+  <div class="footer-inner" id="contact">
     <div class="h2"><span class="title-big-b">contact</span><br><span class="jp-sm-b">-お声かけ-</span></div>
     <form action="program.php" method="post" novalidate>
       <dl>
@@ -18,7 +19,7 @@
         </div>
       </dl>
       <div class="form-submit button-cover">
-        <button type="submit" value="送信する"><a href="#"><span class="title-big-b">send</span><br><span class="jp-sm-b"> -送信する-</span></a></button>
+        <button type="submit" value="送信する"><a href="#"><span class="btn-text">send</span><br><span class="jp-sm-b"> -送信する-</span></a></button>
       </div>
 
 
@@ -44,11 +45,11 @@
 
 
 <?php
-  // wp_enqueue_script('jquery');
-  wp_enqueue_script(
-    'main-js',
-    get_template_directory_uri() . '/js/script.js',
-  );
+wp_enqueue_script('jquery');
+wp_enqueue_script(
+  'main-js',
+  get_template_directory_uri() . '/js/script.js',
+);
 ?>
 
 <?php wp_footer(); ?>
