@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main class="404">
+<main class="404 main-inner">
   <section class="section">
     <div class="section_inner">
       <div class="section_header">

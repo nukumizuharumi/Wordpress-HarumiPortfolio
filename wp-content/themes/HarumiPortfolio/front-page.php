@@ -61,7 +61,7 @@
     <section class="sect sect-about">
       <div class="h2"><span class="title-big-b">about</span><br><span class="jp-sm-b">-私について-</span></div>
       <div class="about">
-        <img src="<?= get_template_directory_uri(); ?>/img/common/android-chrome-192x192.png" alt="制作者イメージ">
+        <img src="<?= get_template_directory_uri(); ?>/img/about/profile.jpg" alt="制作者イメージ">
         <div class="about-text">
           <p class="about-text-name"><span class="title-big-b">harumi nukumizu</span><br><span class="jp-mid">温水 晴海</span></p>
           <p>海外生まれ、日本育ち。<br>

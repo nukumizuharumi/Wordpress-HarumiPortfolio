@@ -94,6 +94,7 @@ body {
 .cursive,
 .title-sm-b,
 h3,
+.h3,
 .title-big-n {
   font-size: 32px;
   font-weight: bold;
@@ -106,6 +107,7 @@ h3,
 .cursive span,
 .title-sm-b span,
 h3 span,
+.h3 span,
 .title-big-n span {
   font-size: 16px;
   font-weight: bold;
@@ -120,7 +122,8 @@ h3 span,
   font-size: 32px;
 }
 .title-sm-b,
-h3 {
+h3,
+.h3 {
   font-size: 20px;
   font-family: var(--text-jp);
   text-transform: capitalize;
@@ -620,19 +623,25 @@ textarea {
   padding-top: 84px;
   padding-bottom: 32px;
 }
-.works-page .main-inner ul {
+.page-nav {
+  display: flex;
+  flex-direction: column;
+  margin: 32px 0px;
+  gap: 16px;
+}
+.page-nav ul {
   display: flex;
   flex-direction: row;
 }
-.works-page li {
+.page-nav li {
   padding: 16px;
 }
 @media screen and (max-width: 767px) {
-  .works-page li {
+  .page-nav li {
     padding: 4px;
   }
 }
-.works-page li a {
+.page-nav li a {
   text-transform: capitalize;
   font-weight: bold;
 }
@@ -802,9 +811,4 @@ textarea {
 }
 .work-page .prenext-title {
   margin: 16px 0px 48px 0px;
-}
-.works-nav {
-  display: flex;
-  flex-direction: column;
-  padding: 16px 0px;
 } /*# sourceMappingURL=style.min.css.map */

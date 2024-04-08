@@ -69,7 +69,7 @@
                 </a>
               </div>
               <div class="btn">
-                <a href="#">
+                <a href="<?= get_permalink(58); ?>">
                   <p class="jp-sm-b">制作したもの一覧へ</p>
                 </a>
               </div>

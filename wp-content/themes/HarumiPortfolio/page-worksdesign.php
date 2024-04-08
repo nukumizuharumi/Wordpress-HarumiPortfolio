@@ -9,27 +9,29 @@
     <div class="h2 m-b-0"><span class="title-big-b">works</span><br><span class="jp-sm-b">-制作したもの-</span>
     </div>
 
-    <nav class="works-nav">
-      <p>各項目へ移動</p>
-      <ul>
-        <li><a href="#website"><span class="">website</span><br><span>-ウェブサイト-</span></a></li>
-        <li><a href="#banner"><span>banner</span><br><span>-バナー-</span></a></li>
-        <li><a href="#logo"><span>logo</span><br><span>-ロゴ-</span></a></li>
-        <li><a href="#other"><span>other</span><br><span>-その他-</span></a></li>
-      </ul>
-    </nav>
+    <div class="page-nav">
+      <nav class="works-nav">
+        <p class="h3 sun-sm">ページ内の各項目へ移動</p>
+        <ul>
+          <li><a href="#website"><span class="">website</span><br><span>-ウェブサイト-</span></a></li>
+          <li><a href="#banner"><span>banner</span><br><span>-バナー-</span></a></li>
+          <li><a href="#logo"><span>logo</span><br><span>-ロゴ-</span></a></li>
+          <li><a href="#other"><span>other</span><br><span>-その他-</span></a></li>
+        </ul>
+      </nav>
+      <nav class="works-nav category">
+        <p class="h3 sun-sm">各項目ページへ移動</p>
+        <ul class="category-page">
+          <?php
+          $args = [
+            'title_li' => '',
+          ];
+          wp_list_categories($args);
+          ?>
+        </ul>
+      </nav>
+    </div>
 
-    <nav class="works-nav category">
-      <p>各項目ページへ</p>
-      <ul class="category-page">
-        <?php
-        $args = [
-          'title_li' => '',
-        ];
-        wp_list_categories($args);
-        ?>
-      </ul>
-    </nav>
   </div>
 
   <div class="main-inner">
