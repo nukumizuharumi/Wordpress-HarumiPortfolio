@@ -25,10 +25,14 @@ add_theme_support('post-thumbnails');
 add_theme_support('menus');
 
 
-// function my_editor_support()
-// {
-//   //エディタースタイル
-//   add_theme_support('editor-styles');
-//   add_editor_style('css/style.min.css');
-// }
-// add_action('after_setup_theme', 'my_theme_support');
+
+/**
+ * contact form 7のときに整形をOFFにする
+ *
+ * @return bool
+ */
+function my_wpcf7_autop()
+{
+  return false;
+}
+add_filter('wpcf7_autop_or_not', 'my_wpcf7_autop');

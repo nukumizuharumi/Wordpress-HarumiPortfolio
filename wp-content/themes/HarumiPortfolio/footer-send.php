@@ -1,16 +1,6 @@
 <footer>
 
 
-
-
-
-  <div class="footer-inner" id="contact">
-    <div class="h2"><span class="title-big-b">contact</span><br><span class="jp-sm-b">-お声かけ-</span></div>
-
-    <?= do_shortcode('[contact-form-7 id="35b9961" title="Contact form 1"]'); ?>
-
-  </div>
-
   <div class="footer-bottom" id="wrapper">
     <div class="wave">
       <canvas id="waveCanvas2"></canvas>
