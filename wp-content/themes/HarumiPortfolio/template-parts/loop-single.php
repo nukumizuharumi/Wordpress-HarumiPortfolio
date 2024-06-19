@@ -1,6 +1,6 @@
 <div id="post-<?php the_ID(); ?>" <?php post_class('work'); ?>>
 
-  <a href="<?php the_field('siteurl'); ?>" target="_blank">
+  <a href="<?php the_field('url'); ?>" target="_blank">
     <div class="img-cover">
       <?php if (has_post_thumbnail()) : ?>
         <?php the_post_thumbnail('medium'); ?>
@@ -19,4 +19,5 @@
           echo '　';
         }
       } ?></p>
+  <p><?php the_tags('', '　'); ?></p>
 </div>

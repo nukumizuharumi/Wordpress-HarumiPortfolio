@@ -30,7 +30,7 @@
     <div class="main-inner">
         <section class="sect sect-website" id="website">
             <div class="h2-sub">
-                <span class="title-big-b"><?php wp_title('') ?></span><br><span class="jp-sm-b">-ウェブサイト-</span>
+                <span class="title-big-b"><?php wp_title('') ?></span><br><span class="jp-sm-b"></span>
             </div>
 
             <?php if (have_posts()) : ?>

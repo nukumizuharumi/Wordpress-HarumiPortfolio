@@ -30,6 +30,19 @@
           ?>
         </ul>
       </nav>
+      <nav class="works-nav category">
+        <p class="h3 sun-sm">各使用ツールページへ移動</p>
+        <ul class="category-page">
+          <?php
+          $posttags = get_tags();
+          if ($posttags) {
+            foreach ($posttags as $tag) {
+              echo ' <li><a href="' . get_tag_link($tag->term_id) . '">' . $tag->name . '</a>(' . $tag->count . ')</li>';
+            }
+          }
+          ?>
+        </ul>
+      </nav>
     </div>
 
   </div>

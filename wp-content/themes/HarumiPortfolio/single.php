@@ -10,10 +10,7 @@
         <section id="post-<?php the_ID(); ?>" <?php post_class('sect', 'sect-works'); ?>>
           <div class="h2"><span class="title-big-b">works</span><br><span class="jp-sm-b">-制作したもの-</span></div>
 
-
           <?php get_template_part('template-parts/loop-single'); ?>
-
-
 
 
           <div class="work-explanation">

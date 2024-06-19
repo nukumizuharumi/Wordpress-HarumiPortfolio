@@ -21,6 +21,10 @@
       </div>
       <img class="suzuran-sm" src="<?= get_template_directory_uri(); ?>/img/common/suzurann-sm.png" alt="小さな鈴蘭の花">
       <small class="copy">&copy;2024 HARUMI All rights reserved. </small>
+      <div class="recaptcha-area">This site is protected by reCAPTCHA and the Google
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">Privacy Policy</a> and
+        <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">Terms of Service</a> apply.
+      </div>
     </div>
   </div>
 
